@@ -9,6 +9,7 @@ const referenceLogos = [
   "/references/TheMasterMind-Partner-300x300.png",
   "/references/totheszter-300x300.jpg",
   "/references/536270836_122129527688906365_4977882242779823765_n-300x300.jpg",
+  "/references/Kertvéllesy.png",
 ];
 
 export default function LogoCarousel() {
