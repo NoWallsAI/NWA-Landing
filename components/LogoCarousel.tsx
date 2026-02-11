@@ -12,12 +12,15 @@ const referenceLogos = [
 ];
 
 export default function LogoCarousel() {
+  // Duplikáljuk a logókat 3x, hogy mindig kitöltött legyen a csík
+  const triplicatedLogos = [...referenceLogos, ...referenceLogos, ...referenceLogos];
+  
   return (
     <section className="py-12 md:py-16 bg-gradient-to-b from-nwa-dark to-nwa-darker overflow-hidden relative">
       <div className="absolute inset-0 gradient-fade-left pointer-events-none z-10" />
       
-      <div className="animate-slide-left-right flex items-center justify-center gap-12 md:gap-16 px-8">
-        {referenceLogos.map((logo, index) => (
+      <div className="animate-slide-left-right flex items-center justify-center gap-16 md:gap-24 px-8">
+        {triplicatedLogos.map((logo, index) => (
           <div
             key={`logo-${index}`}
             className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 relative hover:scale-110 transition-transform duration-300"
