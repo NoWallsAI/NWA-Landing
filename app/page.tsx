@@ -32,7 +32,7 @@ export default function Home() {
           className="flex flex-col items-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-nwa-cyan mb-4">
-            Fontos
+            Első lépés
           </h2>
           <motion.div
             animate={{ y: [0, 10, 0] }}
