@@ -41,7 +41,7 @@ export default function VideoSection({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="px-4 md:px-8 py-12 md:py-16"
+      className="px-4 md:px-8 py-6 md:py-8"
     >
       <div className="container mx-auto max-w-6xl">
         {title && (
