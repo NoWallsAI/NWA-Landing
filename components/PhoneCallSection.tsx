@@ -44,7 +44,7 @@ export default function PhoneCallSection() {
           
           <div className="space-y-2">
             <p className="text-2xl md:text-3xl font-bold text-nwa-text group-hover:text-nwa-cyan transition-colors duration-300">
-              Hívj minket 08:00-tól 17:00-ig
+              Hívjon minket 08:00-tól 17:00-ig
             </p>
             <p className="text-xl md:text-2xl text-nwa-cyan font-semibold">
               +36 30 959 6017

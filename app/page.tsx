@@ -19,21 +19,44 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-nwa-text via-nwa-highlight to-nwa-cyan bg-clip-text text-transparent">
             Üdvözöljük a NoWalls.AI-nál
           </h1>
-          <p className="text-lg md:text-xl text-nwa-metal mb-8">
-            AI megoldások, amelyek átformálják vállalkozását
-          </p>
+        </motion.div>
+      </section>
+
+      {/* Important Video Section with Arrow */}
+      <section className="container mx-auto px-4 md:px-8 text-center mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-nwa-cyan mb-4">
+            Fontos
+          </h2>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <svg
+              className="w-12 h-12 text-nwa-cyan"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </motion.div>
         </motion.div>
       </section>
 
       {/* Introduction Video Section */}
       <VideoSection 
-        title="Bemutatkozás"
-        placeholder={true}
-      />
-
-      {/* Product Demo Video Section */}
-      <VideoSection 
-        title="Termék Bemutató"
         placeholder={true}
       />
 

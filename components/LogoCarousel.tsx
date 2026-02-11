@@ -12,33 +12,19 @@ const referenceLogos = [
 ];
 
 export default function LogoCarousel() {
+  // Duplikáljuk a logókat a seamless scroll-hoz
+  const duplicatedLogos = [...referenceLogos, ...referenceLogos];
+  
   return (
     <section className="py-12 md:py-16 bg-gradient-to-b from-nwa-dark to-nwa-darker overflow-hidden relative">
       <div className="absolute inset-0 gradient-fade-left pointer-events-none z-10" />
       
-      <div className="flex whitespace-nowrap">
-        <div className="animate-scroll inline-flex items-center space-x-12 md:space-x-16">
-          {referenceLogos.map((logo, index) => (
+      <div className="flex">
+        <div className="animate-scroll-reverse flex items-center gap-12 md:gap-16">
+          {duplicatedLogos.map((logo, index) => (
             <div
-              key={`logo-1-${index}`}
-              className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 relative grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-            >
-              <Image
-                src={logo}
-                alt={`Partner logo ${index + 1}`}
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 128px, 160px"
-              />
-            </div>
-          ))}
-        </div>
-        
-        <div className="animate-scroll inline-flex items-center space-x-12 md:space-x-16">
-          {referenceLogos.map((logo, index) => (
-            <div
-              key={`logo-2-${index}`}
-              className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 relative grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+              key={`logo-${index}`}
+              className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 relative hover:scale-110 transition-transform duration-300"
             >
               <Image
                 src={logo}

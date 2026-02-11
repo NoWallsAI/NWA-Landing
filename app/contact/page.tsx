@@ -16,10 +16,10 @@ export default function Contact() {
           className="text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-nwa-text to-nwa-cyan bg-clip-text text-transparent">
-            Lépj Kapcsolatba Velünk
+            Lépjen Kapcsolatba Velünk
           </h1>
           <p className="text-lg md:text-xl text-nwa-metal">
-            Válassz időpontot vagy hívj minket közvetlenül
+            Válasszon időpontot vagy hívjon minket közvetlenül
           </p>
         </motion.div>
       </section>
