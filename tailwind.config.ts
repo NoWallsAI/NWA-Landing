@@ -21,12 +21,12 @@ const config: Config = {
         'nwa-text': '#F2F2F2',
       },
       animation: {
-        'slide-left-right': 'slide-left-right 20s ease-in-out infinite',
+        'infinite-scroll': 'infinite-scroll 30s linear infinite',
       },
       keyframes: {
-        'slide-left-right': {
-          '0%, 100%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(-30%)' },
+        'infinite-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-33.333%)' },
         },
       },
     },
