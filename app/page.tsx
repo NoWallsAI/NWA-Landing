@@ -55,7 +55,12 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Introduction Video Section */}
+      {/* First Video Section */}
+      <VideoSection 
+        placeholder={true}
+      />
+
+      {/* Second Video Section */}
       <VideoSection 
         placeholder={true}
       />
