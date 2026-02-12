@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const referenceLogos = [
   "/references/ag-300x300.png",
+  "/references/5Dent.png",
   "/references/alphadent2-300x300.jpg",
   "/references/biokert-300x300.jpg",
   "/references/TheMasterMind-Partner-300x300.png",
