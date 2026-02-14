@@ -36,6 +36,11 @@ export default function Footer() {
   return (
     <footer className="bg-nwa-darker py-12 border-t border-nwa-anthracite">
       <div className="container mx-auto px-4 md:px-8">
+        {/* Subtle label above social icons */}
+        <p className="text-center text-nwa-metal/60 text-xs mb-4 tracking-wide">
+          Még több rólunk:
+        </p>
+        
         <div className="flex justify-center items-center gap-12">
           {socialLinks.map((link, index) => (
             <motion.a
