@@ -16,7 +16,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-nwa-text via-nwa-highlight to-nwa-cyan bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 pt-2 leading-relaxed bg-gradient-to-r from-nwa-text via-nwa-highlight to-nwa-cyan bg-clip-text text-transparent">
             Üdvözöljük a NoWalls.AI-nál
           </h1>
         </motion.div>
