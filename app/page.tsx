@@ -55,14 +55,9 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* First Video Section */}
+      {/* Video Section */}
       <VideoSection 
-        placeholder={true}
-      />
-
-      {/* Second Video Section */}
-      <VideoSection 
-        placeholder={true}
+        videoUrl="https://youtu.be/qi58hHtrRo0"
       />
 
       {/* CTA Section */}
