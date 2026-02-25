@@ -12,6 +12,7 @@ const referenceLogos = [
   "/references/536270836_122129527688906365_4977882242779823765_n-300x300.jpg",
   "/references/Kertvéllesy.png",
   "/references/Derigo Kft.png",
+  "/references/silvanus_logo.png",
 ];
 
 export default function LogoCarousel() {
